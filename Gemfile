@@ -10,11 +10,11 @@ end
 gem 'rails', '~> 5.0.2'
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
 end
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver'
+  gem 'capybara', '~> 2.2.0'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -45,7 +45,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
-
+#gem 'test-unit'
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
